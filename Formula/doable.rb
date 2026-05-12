@@ -5,7 +5,7 @@ class Doable < Formula
   sha256 "5feef900482af1e7acff85e4880ad05d95b5bd7f1e5713849f4aaf6ceef75211"
   license "MIT"
 
-  depends_on "node@20"
+  depends_on "node"
 
   def install
     system "npm", "install", *Language::Node.local_npm_install_args
@@ -13,6 +13,6 @@ class Doable < Formula
   end
 
   test do
-    assert_match "0.1.2", shell_output("#{bin}/doable --version")
+    assert_match version.to_s, shell_output("#{bin}/doable --version")
   end
 end
