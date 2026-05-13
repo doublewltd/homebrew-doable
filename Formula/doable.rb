@@ -1,8 +1,8 @@
 class Doable < Formula
   desc "AI-native deployment CLI"
   homepage "https://doable.do"
-  url "https://registry.npmjs.org/doable-cli/-/doable-cli-0.1.3.tgz"
-  sha256 "1691e4250b36acf7a623dd86eec73c82482d1feea32f82673f54e317928acb98"
+  url "https://registry.npmjs.org/doable-cli/-/doable-cli-0.1.4.tgz"
+  sha256 "50a7ab23b869f3695f4c7c0d31c2623bb2a492590038770ce2192e5cd24e97ec"
   license "MIT"
 
   depends_on "node"
